@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/161dc2deeb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm <span>Harshavardan</span></h1>
+         
+              <br>
+              <div class="contain">
+                <div class="line-loop">
+                  <p>&bull; Problem Solver &bull;</p>
+                  <p>&bull; Quick Learner &bull;</p>
+                  <p> &bull; Full-Stack Developer &bull;</p>
+                  <p>&bull; Grad Student &bull;</p>
+                  <p>&bull; Data Analyst &bull;</p>
+                </div>
+              </div>
+
+            <br>
+            <a href="images/harshavardan_cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+<!-- -----about----- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p> I'm a graduate student pursuing Master's in Computer Science at University at Buffalo with focus on Software development and Machine Learning. I am into Full-Stack development and am venturing into the "multiverse" of Machine Learning. I hope to apply my problem-solving skills to provide new solutions that result in societal and hopefully, environmental impact.  
+                  <br>  Constantly working to be better at competitive coding and strengthening skills on Algorithms, Data structures and Machine Learning techniques.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python, Java, C++, JavaScript, Pl/SQL, HTML, CSS, Solidity</li>
+                        <li><span>Databases</span><br>Oracle, MySQL, PostgreSQL, MongoDB</li>
+                        <li><span>Tools and Frameworks</span><br>Node.js, Flask, React, Angular, Jenkins, Docker, AWS, Github, Tableau, SSMS, JIRA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2018 - Aug 2021</span><br>Software Engineer | Accenture</li>
+                        <li><span>Feb 2014 - Apr 2014</span><br>Intern | Ivory Edge</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2021 - Feb 2023</span><br>Masters in Computer Science 
+                        <br>GPA: 3.66/4.0
+                        <br>University at Buffalo, Buffalo, NY</li>
+                        <li><span>Aug 2014 - May 2018</span><br>Bachelors in Telecommunications and Electronics
+                        <br>CGPA: 8.8/10.0
+                        <br>BMS College of Engineering, Bengaluru, India </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------work---------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>CNN Fashion MNIST</h2>
+                <p>Built a fully connected Convolutional Neural Network in python to classify fashion MNIST dataset </p>
+                <a href="https://github.com/hvr25/Building_CNN_Fashion_MNIST"><u>See Repo</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Autonomous Robot Navigation </h2>
+                <p>Programmed a laser-based perception and navigation of autonomous robot with a radar sensor in a given environment using C++ in Robot Operating System (ROS) and f1tenth simulator  </p>
+                <a href="https://github.com/hvr25/perception_navigation"><u>See Repo</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-bitcoin-sign"></i>
+                <h2>Distributed Campus Feedback </h2>
+                <p>Built and setup a decentralised platform for providing feedback and conducting polls for Campus Dining Services at University at Buffalo </p>
+                <a href="https://github.com/hvr25/Capus-Dining-FT"><u>See Repo</u></a>
+            </div>
+            
+        </div>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h2>E-Shoppe</h2>
+                <p>Created web application and developed backend for a robust e-commerce system that allows retailers to organize, process and fulfill their orders  </p>
+                <a href="https://github.com/hvr25"><u>See Repo</u></a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Timecapsule App </h2>
+                <p>Built a mobile application for timecapsulellc.com as part of Project Development course  </p>
+                <a href="https://github.com/hvr25"><u>See Repo</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Reinforcement Learning</h2>
+                <p>Implemented Deep Q Network to train an agent in an environment to reach the goal with maximum reward. </p>
+                <a href="https://github.com/hvr25"><u>See Repo</u></a>
+            </div>
+            
+        </div>
+        <a href="https://github.com/hvr25" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- -----achievements----- -->
+<div id="achievements">
+    <div class="container">
+        
+            <div class="about-col-2">
+                <h1 class="sub-title">Achievements</h1>
+                
+
+                <div class="tab-titles">
+                    <p class="tab-links_a active-link_a" onclick="opentab_a('awards')">Awards</p>
+                    <p class="tab-links_a" onclick="opentab_a('certification')">Certification</p>
+                    <p class="tab-links_a" onclick="opentab_a('publications')">Publications</p>
+                </div>
+                <div class="tab-contents_a active-tab_a" id="awards">
+                    <ul>
+                        <li><span>Apex Award</span><br>For delivering high quality solutions and making an impact on client value creation, Accenture 2020 </li>
+                        
+                        <li><span>Ace Award</span><br>For outstanding contribution to client’s business outcomes, Accenture 2019 <i onclick ="disp_cert('cert_1')" class="view_cert"><u>View Certificate</u></i> </li>
+                        <div class="cert"><img  src="images/ace_award.jpg" alt="" id="cert_1" display="none"></div>
+                        <li><span>Phase shift</span><br>2nd place in Project Race, Annual Tech symposium of BMS College of Engineering 2016 <i onclick ="disp_cert('cert_2')" class="view_cert"><u>View Certificate</u></i></li>
+                        <div class="cert"><img  src="images/project_race.jpg" alt="" id="cert_2" display="none"></div>
+                    </ul>
+                </div>
+                <div class="tab-contents_a" id="certification">
+                    <ul>
+                        <li><span>Azure Fundamentals</span><br>Microsoft certified Azure Fundamentals, Dec 2022
+                            <i onclick ="disp_cert('cert_3')" class="view_cert"><u>View Certificate</u></i></li></li>
+                        <div class="cert"><img  src="images/azure.PNG" alt="" id="cert_3" display="none"></div>
+                    </ul>
+                </div>
+                <div class="tab-contents_a" id="publications">
+                    <ul>
+                        <li><span>Springer</span><br>
+                        Presented and published "Implementation of Security System and its Interconnection with Lighting" at Emerging Trends in Photonics
+                        <br> Signal Processing and Communication Engineering-2018 by Springer, Bengaluru 
+                    <a class="publication" href="https://link.springer.com/chapter/10.1007/978-981-15-3477-5_31"> View publication</a> </li>
+                        <li><span>Rest Journal </span>
+                            <br>Co-author for the work "Techniques Driving Energy Efficiency Contributing to Environment Sustainability Goals"
+                        <br>Rest Journal, 2018 Goa 
+                    <a class="publication" href="https://secureservercdn.net/50.62.90.29/d8a.8cf.myftpupload.com/wp-content/uploads/2018/11/Techniques-Driving-Energy-Efficiency-Contributing-to-Environment-Sustainability-Goals.pdf">View Publication</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<!-- --------portfolio------ -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/hobby_farm.jpg" >
+                <div class="layer">
+                    <h3>Farming</h3>
+                    <p>Caring for the things that grow, I invest my time into planting fruit and vegetable saplings in our farm! </p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hobby_ski.jpg" >
+                <div class="layer">
+                    <h3>Skiing</h3>
+                    <p>Shoop! Shoop! Shoop! <br> Not a pro, but I do enjoy Ski weekends in winter! </p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hobby_travel.jpg" >
+                <div class="layer">
+                    <h3>Travel</h3>
+                    <p>Sea, Mountain, Lake, or Islands, I want to see it all! Checking one place off the bucket list everywhere I go.</p>
+                    <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- --------contact--------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> harshavr25@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+1 (716) 903 3303</p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/harshavardan-ramadas/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/hvr25" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://facebook.com/" ><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                
+            </div>
+          
+        </div>
+    </div>
+    
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var tablinks_a = document.getElementsByClassName("tab-links_a");
+    var tabcontents_a = document.getElementsByClassName("tab-contents_a");
+    function opentab_a(tabnamea){
+        for(tablinka of tablinks_a){
+            tablinka.classList.remove("active-link_a");
+        }
+        for(tabcontenta of tabcontents_a){
+            tabcontenta.classList.remove("active-tab_a");
+        }
+        event.currentTarget.classList.add("active-link_a");
+        document.getElementById(tabnamea).classList.add("active-tab_a");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    function disp_cert(num) {
+      var x = document.getElementById(num);
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+
+
+
+</script>
+
+</body>
+</html>
